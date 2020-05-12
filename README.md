@@ -40,15 +40,27 @@
 
 >将 **CUDA**、**CUPTI** 和 **cuDNN** 安装目录添加到 `%PATH%` 环境变量中。
 >- 将 **CUDA**  安装到 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0`；
->- 将 **cuDNN** 安装到 `C:\Program Files\NVIDIA GPU Computing Toolkit\cuDNN\for9.0`。
+>- 将 **cuDNN** 安装到 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\cuDNN`。
 
 ```batch
+@ECHO OFF
 REM 更新环境变量
-SET NVIDIA_GPU_CT_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit
-SET PATH=%NVIDIA_GPU_CT_PATH%\CUDA\9.0\bin;%PATH%
-SET PATH=%NVIDIA_GPU_CT_PATH%\CUDA\v9.0\extras\CUPTI\libx64;%PATH%
-SET PATH=%NVIDIA_GPU_CT_PATH%\CUDA\v9.0\include;%PATH%
-SET PATH=%NVIDIA_GPU_CT_PATH%\cuDNN\for9.0;%PATH%
+SET NVIDIA_GPU_CT_PATH=%ProgramFiles%\NVIDIA GPU Computing Toolkit
+SET CUDA_VERSION=v9.0
+SET CUDA_PATH=%NVIDIA_GPU_CT_PATH%\CUDA\%CUDA_VERSION%
+
+::================================================
+
+SET PATH=%CUDA_PATH%\bin;%PATH%
+SET PATH=%CUDA_PATH%\extras\CUPTI\libx64;%PATH%
+SET PATH=%CUDA_PATH%\include;%PATH%
+SET PATH=%CUDA_PATH%\cuDNN\bin;%PATH%
+
+::================================================
+
+@SET APPPATH=%~1
+@ECHO %APPPATH%
+@START "" "%APPPATH%"
 ```
 
 ### 卸载
