@@ -75,7 +75,7 @@ SET CUDNN_PATH=%CUDA_PATH%\cuda
 SET PATH=%CUDA_PATH%\bin;%PATH%
 SET PATH=%CUDA_PATH%\extras\CUPTI\libx64;%PATH%
 SET PATH=%CUDA_PATH%\include;%PATH%
-SET PATH=%CUDA_PATH%\cuda\bin;%PATH%
+SET PATH=%CUDNN_PATH%\bin;%PATH%
 
 ::================================================
 
