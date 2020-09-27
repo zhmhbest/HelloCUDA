@@ -7,26 +7,24 @@
 
 ## 硬件
 
-### 硬件信息
-
-- [CUDA-Z](./packages/CUDA-Z-0.10.251-32bit.exe)
-- [GPU-Z](./packages/GPU-Z.2.26.0.exe)
-
 ### 硬件驱动
 
 - [NVIDA Drivers](https://www.nvidia.com/Download/index.aspx)
 
 ### 硬件支持
 
-- 查看您的GPU是否在[CUDA-GPUS](https://developer.nvidia.com/cuda-gpus)中（旧显卡）
-
-- 直接查看GPU是否支持CUDA（新显卡）
+- 查看您的GPU是否在[CUDA-GPUS](https://developer.nvidia.com/cuda-gpus)中（部分旧显卡）
+- 直接查看GPU是否支持CUDA（部分新显卡）
   - [Notebook GPU Specifications](https://www.geforce.cn/hardware/notebook-gpus)
   - [Desktop GPU Specifications](https://www.geforce.cn/hardware/desktop-gpus)
+- 使用[GPU-Z](https://www.techpowerup.com/download/techpowerup-gpu-z/)查看显卡是否支持CUDA
+
+<span class='highlight'>以上条件任意满足其一，即代表显卡支持CUDA。
 
 #### 例
 
 - [![MX250](./images/mx250.png)](https://www.geforce.cn/hardware/notebook-gpus/geforce-mx250/specifications)
+- ![GPU-Z](images/GPU-Z.png)
 
 ## 下载
 
