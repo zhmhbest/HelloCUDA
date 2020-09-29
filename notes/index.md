@@ -5,6 +5,22 @@
 
 [TOC]
 
+## 推荐环境
+
+### 环境1
+
+- [Python 3.6.8](https://www.python.org/downloads/release/python-368/)
+- [CUDA 9.0](https://developer.nvidia.com/cuda-90-download-archive)
+- [`pip install numpy==1.16.4`](https://pypi.org/project/numpy/1.16.4/)
+- [`pip install tensorflow-gpu==1.8.0`](https://pypi.org/project/tensorflow-gpu/1.8.0/)
+
+### 环境2
+
+- [Python 3.7.6](https://www.python.org/downloads/release/python-376/)
+- [CUDA 10.0](https://developer.nvidia.com/cuda-10.0-download-archive)
+- [`pip install numpy==1.16.4`](https://pypi.org/project/numpy/1.16.4/)
+- [`pip install tensorflow-gpu==1.14.0`](https://pypi.org/project/tensorflow-gpu/1.14.0/)
+
 ## 硬件
 
 ### 硬件驱动
@@ -90,7 +106,8 @@ SET PATH=%CUDNN_PATH%\bin;%PATH%
 
 - [Download Tensorflow (aliyun)](http://mirrors.aliyun.com/pypi/simple/tensorflow-gpu/)
 - [Download Tensorflow (pypi)](https://pypi.org/project/tensorflow-gpu/#history)
-- [Tensorflow GPU](https://www.tensorflow.org/install/source_windows#gpu)
+- [Tensorflow Windows Build GPU](https://www.tensorflow.org/install/source_windows#gpu)
+- [Tensorflow GPU Config](https://www.tensorflow.org/install/gpu)
 
 ## PyTorch
 
