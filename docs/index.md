@@ -84,6 +84,7 @@ IF DEFINED CUDA_PATH_BK (
     REM SETX CUDA_ENV "%CUDA_PATH%\bin;%CUDA_PATH%\lib;%CUDA_PATH%\libnvvp;%CUDA_PATH%\extras\CUPTI\libx64;%CUDA_PATH%\include;%CUDA_PATH%\cuda\bin"
 )
 REM ECHO %CUDA_ENV%
+REM 然后手动将CUDA_ENV加入PATH中
 ```
 
 ### 卸载
