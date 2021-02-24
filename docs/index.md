@@ -73,29 +73,17 @@ CUDA最终将位于`C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v?.?`
 需要将 **CUDA**、**CUPTI** 和 **cuDNN** 目录添加到 `%PATH%` 环境变量中。
 
 ```batch
-@ECHO OFF
-REM 更新环境变量
-
-SET CUDA_VERSION=v9.0
-
-::================================================
-
-SET NVIDIA_GPU_CT_PATH=%ProgramFiles%\NVIDIA GPU Computing Toolkit
-SET CUDA_PATH=%NVIDIA_GPU_CT_PATH%\CUDA\%CUDA_VERSION%
-SET CUDNN_PATH=%CUDA_PATH%\cuda
-
-::================================================
-
-SET PATH=%CUDA_PATH%\bin;%PATH%
-SET PATH=%CUDA_PATH%\extras\CUPTI\libx64;%PATH%
-SET PATH=%CUDA_PATH%\include;%PATH%
-SET PATH=%CUDNN_PATH%\bin;%PATH%
-
-::================================================
-
-@SET APPPATH=%~1
-@ECHO %APPPATH%
-@START "" "%APPPATH%"
+REM SET CUDA_VERSION=v10.1
+REM SET CUDA_PATH=%ProgramFiles%\NVIDIA GPU Computing Toolkit\CUDA\%CUDA_VERSION%
+IF DEFINED CUDA_PATH (
+    SET CUDA_PATH_BK=%CUDA_PATH%
+    SET CUDA_PATH=
+)
+IF DEFINED CUDA_PATH_BK (
+    SETX CUDA_ENV "%CUDA_PATH%\bin;%CUDA_PATH%\extras\CUPTI\libx64;%CUDA_PATH%\cuda\bin"
+    REM SETX CUDA_ENV "%CUDA_PATH%\bin;%CUDA_PATH%\lib;%CUDA_PATH%\libnvvp;%CUDA_PATH%\extras\CUPTI\libx64;%CUDA_PATH%\include;%CUDA_PATH%\cuda\bin"
+)
+REM ECHO %CUDA_ENV%
 ```
 
 ### 卸载
