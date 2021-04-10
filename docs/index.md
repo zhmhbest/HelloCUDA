@@ -95,8 +95,8 @@ REM 然后手动将CUDA_ENV加入PATH中
 
 - [Download Tensorflow (aliyun)](http://mirrors.aliyun.com/pypi/simple/tensorflow-gpu/)
 - [Download Tensorflow (pypi)](https://pypi.org/project/tensorflow-gpu/#history)
-- [Tensorflow Windows Build GPU](https://www.tensorflow.org/install/source_windows#gpu)
-- [Tensorflow GPU Config](https://www.tensorflow.org/install/gpu)
+- [Tensorflow Windows Build GPU](https://tensorflow.google.cn/install/source_windows#gpu)
+- [Tensorflow GPU Config](https://tensorflow.google.cn/install/gpu)
 
 ## PyTorch
 
