@@ -5,6 +5,7 @@
 
 [TOC]
 
+<!--
 ## 推荐环境
 
 ### 环境1
@@ -20,6 +21,7 @@
 - [CUDA 10.0](https://developer.nvidia.com/cuda-10.0-download-archive)
 - [`pip install numpy==1.16.4`](https://pypi.org/project/numpy/1.16.4/)
 - [`pip install tensorflow-gpu==1.14.0`](https://pypi.org/project/tensorflow-gpu/1.14.0/)
+ -->
 
 ## 硬件
 
@@ -45,11 +47,6 @@
 ## 下载
 
 > 下载cuDNN需要登录帐号
-
-<!--
-    707215825@qq.com
-    ZHmh542761
--->
 
 - [Download CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
 - [Download cuDNN Archive](https://developer.nvidia.com/rdp/cudnn-archive)
